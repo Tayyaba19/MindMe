@@ -34,7 +34,7 @@ MindMe – Conversational Knowledge Assistant with Graph Visualization
 ---
 ## Installation & Setup
 
-git clone <your-repo-url>
+git clone https://github.com/Tayyaba19/MindMe.git
 cd MindMe
 
 # Create virtual environment
