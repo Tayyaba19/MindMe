@@ -1,0 +1,6 @@
+datasets
+lightrag
+streamlit
+pdfplumber
+pipmaster
+pyvis    
