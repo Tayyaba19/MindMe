@@ -14,7 +14,7 @@ def show_graph():
     G = nx.read_graphml("./rag_storage/graph_chunk_entity_relation.graphml")
 
     # Create a Pyvis network
-    net = Network(height="100vh", width="600vh", notebook=True)
+    net = Network(height="90vh", notebook=True)
 
     # Convert NetworkX graph to Pyvis network
     net.from_nx(G)

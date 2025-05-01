@@ -37,8 +37,9 @@ if st.button("Show Knowledge Graph"):
         html_data = f.read()
 
     # Show in webpage
-    st.header("Show an external HTML")
-    st.components.v1.html(html_data)
+    st.header("Knowledge Graph")
+    st.components.v1.html(html_data, height=300, width=700, scrolling=True)
+    # st.components.v1.html(html_data)
 
 
 async def initialize_rag():
@@ -56,7 +57,6 @@ async def initialize_rag():
 if "rag" not in st.session_state:
     st.session_state.rag = asyncio.run(initialize_rag())
     data = load_data.get_data()
-    print(f"data: {data}")
     st.session_state.rag.insert(data)
     
 if "conversation_history" not in st.session_state:
